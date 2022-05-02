@@ -128,8 +128,7 @@ rules:
  - RULE-SET,rule_tiktok,BUNDLING
  - RULE-SET,rule_whatsapp,BUNDLING
  - RULE-SET,rule_videoconferences,BUNDLING
- - RULE-SET,rule_Gaming,BUNDLING
-
+ - RULE-SET,direct,DIRECT
  - RULE-SET,rule_reject,REJECT
  - RULE-SET,rule_BlockAds,ADS
  - RULE-SET,rule_privacy,ADS
@@ -145,11 +144,12 @@ rule-providers:
     path: "./rule_provider/rule_lancidr.yaml"
     interval: 86400
 
-#  Direct:
-#    type: file
-#    behavior: classical
-#    path: "./direct.yaml"
-
+  direct:
+    type: http
+    behavior: classical
+    path: "./rule_provider/direct.yaml"
+    url: https://raw.githubusercontent.com/unthenamed/rules/main/direct.yaml
+    interval: 86400
 
   rule_umum:
     type: http
