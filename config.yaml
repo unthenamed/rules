@@ -37,8 +37,8 @@ proxy-providers:
   AKUN:
     type: http
     behavior: classical
-    path: "./akun.yaml"
     url: https://raw.githubusercontent.com/unthenamed/rules/main/akun.yaml
+    path: "./akun.yaml"
     interval: 900
     health-check:
       enable: false
