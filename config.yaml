@@ -120,19 +120,30 @@ rules:
  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
  - IP-CIDR,198.18.0.1/16,REJECT,no-resolve
  - RULE-SET,rule_lancidr,DIRECT
-
-#rules
- - RULE-SET,rule_messenger,BUNDLING
- - RULE-SET,rule_line,BUNDLING
- - RULE-SET,rule_metaverse,BUNDLING
- - RULE-SET,rule_tiktok,BUNDLING
- - RULE-SET,rule_whatsapp,BUNDLING
- - RULE-SET,rule_videoconferences,BUNDLING
  - RULE-SET,direct,DIRECT
  - RULE-SET,rule_reject,REJECT
  - RULE-SET,rule_BlockAds,ADS
  - RULE-SET,rule_privacy,ADS
  - RULE-SET,rule_basicads,ADS
+
+
+# Paket Ekstra Kuota Unlimited	
+# 0,5GB	WhatsApp, LINE, TikTok, 
+#		MusicMAX, & GamesMAX.
+# 2/4GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 
+#		MAXstream, MusicMAX, & GamesMAX.
+# 7GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 
+#		YouTube, MAXstream, MusicMAX, & GamesMAX.
+
+#rules
+ - RULE-SET,rule_whatsapp,BUNDLING
+ - RULE-SET,rule_line,BUNDLING
+ - RULE-SET,rule_tiktok,BUNDLING
+ - RULE-SET,rule_messenger,BUNDLING
+ - RULE-SET,rule_metaverse,BUNDLING
+ - RULE-SET,rule_instagram,BUNDLING
+
+
  - MATCH,MENU
 
 rule-providers:
