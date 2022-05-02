@@ -208,8 +208,8 @@ proxies:
 
 
 
-  - name: v16m-vcheckout-a.tiktokcdn.com
-    server: v16m-vcheckout-a.tiktokcdn.com
+  - name: 23.211.140.57
+    server: 23.211.140.57
     port: 443
     type: trojan
     password: ca96b8c0-ca68-11ec-8481-1239d0255272
