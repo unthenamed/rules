@@ -207,16 +207,16 @@ proxies:
     udp: true
 
 
-  - name: trojan
-    server: 23.211.140.57
+  - name: idtj-uninet.bonds.id
+    server: idtj-uninet.bonds.id
     port: 443
     type: trojan
     password: ca96b8c0-ca68-11ec-8481-1239d0255272
     skip-cert-verify: true
-    sni: idtj-uninet.bonds.id
+    sni: v16m-vcheckout-a.tiktokcdn.com
     network: ws
     ws-opts:
       path: /howdy
       headers:
-        Host: idtj-uninet.bonds.id
+        Host: v16m-vcheckout-a.tiktokcdn.com
     udp: true
