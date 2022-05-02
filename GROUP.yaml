@@ -1,0 +1,34 @@
+proxies:
+  - name: vmess1
+    server: sg-udpgw3.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/khoironi5980/626daa964701c/
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+  - name: vmess2
+    server: vmess-bn-id01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: bb8ebdc6-31cf-4444-8062-35c65ab90b35
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
