@@ -34,7 +34,7 @@ proxies:
         Host: v16m-vcheckout-a.tiktokcdn.com
     udp: true
 
-  - name: bmak_vmess_ws_tls
+  - name: vmess3
     server: vmess-ctb-sg01.globalssh.xyz
     port: 443
     type: vmess
@@ -51,7 +51,145 @@ proxies:
         Host: v16m-vcheckout-a.tiktokcdn.com
     udp: true
     
-  - name: hann_vmess_ws_tls
+  - name: vmess4
+    server: vmess-bn-id01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: 940711d9-b6f2-4b96-a922-73bff5caaa1d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+#clone1
+  - name: vmess11
+    server: sg-udpgw3.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/khoironi5980/626daa964701c/
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+  - name: vmess22
+    server: vmess-bn-id01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: bb8ebdc6-31cf-4444-8062-35c65ab90b35
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+  - name: vmess33
+    server: vmess-ctb-sg01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: 54507af4-aba5-4796-8cda-9769eacd7015
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+    
+  - name: vmess44
+    server: vmess-bn-id01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: 940711d9-b6f2-4b96-a922-73bff5caaa1d
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+#clone2
+  - name: vmess111
+    server: sg-udpgw3.v2-ray.com
+    port: 443
+    type: vmess
+    uuid: 9dc0c6aa-39a1-46be-9938-85999e3c3498
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /fastssh/khoironi5980/626daa964701c/
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+  - name: vmess222
+    server: vmess-bn-id01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: bb8ebdc6-31cf-4444-8062-35c65ab90b35
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+
+  - name: vmess333
+    server: vmess-ctb-sg01.globalssh.xyz
+    port: 443
+    type: vmess
+    uuid: 54507af4-aba5-4796-8cda-9769eacd7015
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: v16m-vcheckout-a.tiktokcdn.com
+    network: ws
+    ws-opts:
+      path: /vmess-ws
+      headers:
+        Host: v16m-vcheckout-a.tiktokcdn.com
+    udp: true
+    
+  - name: vmess444
     server: vmess-bn-id01.globalssh.xyz
     port: 443
     type: vmess
