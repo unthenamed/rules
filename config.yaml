@@ -143,7 +143,6 @@ rules:
  - RULE-SET,rule_metaverse,BUNDLING
  - RULE-SET,rule_instagram,BUNDLING
 
-
  - MATCH,MENU
 
 rule-providers:
