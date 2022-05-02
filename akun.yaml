@@ -207,8 +207,7 @@ proxies:
     udp: true
 
 
-
-  - name: 23.211.140.57
+  - name: trojan
     server: 23.211.140.57
     port: 443
     type: trojan
