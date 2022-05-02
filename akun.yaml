@@ -205,18 +205,3 @@ proxies:
       headers:
         Host: v16m-vcheckout-a.tiktokcdn.com
     udp: true
-
-
-  - name: idtj-uninet.bonds.id
-    server: idtj-uninet.bonds.id
-    port: 443
-    type: trojan
-    password: ca96b8c0-ca68-11ec-8481-1239d0255272
-    skip-cert-verify: true
-    sni: v16m-vcheckout-a.tiktokcdn.com
-    network: ws
-    ws-opts:
-      path: /howdy
-      headers:
-        Host: v16m-vcheckout-a.tiktokcdn.com
-    udp: true
