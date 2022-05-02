@@ -39,7 +39,7 @@ proxy-providers:
     behavior: classical
     path: "./akun.yaml"
     url: https://raw.githubusercontent.com/unthenamed/rules/main/akun.yaml
-    interval: 86400
+    interval: 900
     health-check:
       enable: false
       url: http://www.gstatic.com/generate_204
