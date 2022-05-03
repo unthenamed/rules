@@ -6,13 +6,13 @@ external-ui: yacd-gh-pages
 port: 7890
 socks-port: 7891
 redir-port: 7892
-tproxy-port: 7895
+tproxy-port: 7894
 mixed-port: 1080
 
 log-level: info
 allow-lan: true
 ipv6: false
-interface-name: en0
+#interface-name: wlan0
 mode: rule
 
 dns:
@@ -28,6 +28,15 @@ dns:
     - https://1.1.1.1/dns-query 
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+
+#tun:
+#  enable: true
+#  stack: system
+#  auto-route: false
+#  auto-detect-interface: false
+#  dns-hijack:
+#  - tcp://8.8.8.8:53
+#  - tcp://8.8.4.4:53
 
 profile:
   store-selected: true
@@ -45,10 +54,7 @@ proxy-providers:
       url: http://www.gstatic.com/generate_204
       interval: 300
 
-    
-
 proxy-groups:
-
 - name: MENU
   type: select
   proxies:
@@ -78,9 +84,7 @@ proxy-groups:
   - REJECT
   - DIRECT
   - MENU
-  - BEST-PING
-
-
+  - BEST-PING
 - name: BALANCING
   type: load-balance
   strategy: consistent-hashing
@@ -90,7 +94,6 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: '300'
 
-
 - name: BEST-PING
   type: url-test
   tolerance: 100
@@ -99,16 +102,10 @@ proxy-groups:
   url: https://cp.cloudflare.com/generate_204
   interval: '300'
 
-
-
-
 rules:
-#dst direct/rejetc
+ - MATCH,MENU
  - DST-PORT,7895,REJECT
  - DST-PORT,7892,REJECT
- - DST-PORT,7895,REJECT
- - DST-PORT,7892,REJECT
-#ipcdr direct/reject
  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
@@ -126,14 +123,15 @@ rules:
  - RULE-SET,rule_privacy,ADS
  - RULE-SET,rule_basicads,ADS
 
-
-# Paket Ekstra Kuota Unlimited	
-# 0,5GB	WhatsApp, LINE, TikTok, 
-#		MusicMAX, & GamesMAX.
-# 2/4GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 
-#		MAXstream, MusicMAX, & GamesMAX.
-# 7GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 
-#		YouTube, MAXstream, MusicMAX, & GamesMAX.
+#####################№###################################
+# Paket Ekstra Kuota Unlimited							#
+# 0,5GB	WhatsApp, LINE, TikTok,							#
+#		MusicMAX, & GamesMAX.							#
+# 2/4GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 	#
+#		MAXstream, MusicMAX, & GamesMAX.				#
+# 7GB	WhatsApp, LINE, Facebook, Instagram, TikTok, 	#
+#		YouTube, MAXstream, MusicMAX, & GamesMAX.		#
+#####################№###################################
 
 #rules
  - RULE-SET,rule_whatsapp,BUNDLING
@@ -142,8 +140,6 @@ rules:
  - RULE-SET,rule_messenger,BUNDLING
  - RULE-SET,rule_metaverse,BUNDLING
  - RULE-SET,rule_instagram,BUNDLING
-
- - MATCH,MENU
 
 rule-providers:
 
