@@ -10,5 +10,5 @@ function FindProxyForURL(url, host) {
 	}
 
 	// else send it to our local proxy
-	return "PROXY 192.168.1.149:1080;"
+	return "PROXY 192.168.1.149:5080;"
  }
