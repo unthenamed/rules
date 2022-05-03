@@ -9,12 +9,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: s16-u2.tiktokcdn.com
+    servername: h1-16.tiktok.com
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: vmess-ctb-sg01.globalssh.xyz
+        Host: h1-16.tiktok.com
     udp: true
   - name: cvb_vmess_ws_tls
     server: vmess-bn-id01.globalssh.xyz
@@ -25,10 +25,10 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: s16-u2.tiktokcdn.com
+    servername: h1-16.tiktok.com
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: vmess-bn-id01.globalssh.xyz
+        Host: h1-16.tiktok.com
     udp: true
