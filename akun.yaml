@@ -9,12 +9,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: v16m-vcheckout-a.tiktokcdn.com
+    servername: s16-u2.tiktokcdn.com
     network: ws
     ws-opts:
       path: /fastssh/khoironi5980/626daa964701c/
       headers:
-        Host: v16m-vcheckout-a.tiktokcdn.com
+        Host: s16-u2.tiktokcdn.com
     udp: true
 
   - name: vmess2
@@ -26,12 +26,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: v16m-vcheckout-a.tiktokcdn.com
+    servername: s16-u2.tiktokcdn.com
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: v16m-vcheckout-a.tiktokcdn.com
+        Host: s16-u2.tiktokcdn.com
     udp: true
 
   - name: vmess3
@@ -43,12 +43,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: v16m-vcheckout-a.tiktokcdn.com
+    servername: s16-u2.tiktokcdn.com
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: v16m-vcheckout-a.tiktokcdn.com
+        Host: s16-u2.tiktokcdn.com
     udp: true
     
   - name: vmess4
@@ -60,10 +60,10 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: v16m-vcheckout-a.tiktokcdn.com
+    servername: s16-u2.tiktokcdn.com
     network: ws
     ws-opts:
       path: /vmess-ws
       headers:
-        Host: v16m-vcheckout-a.tiktokcdn.com
+        Host: s16-u2.tiktokcdn.com
     udp: true
